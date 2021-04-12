@@ -1,4 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+   <head>
+    <!--<link rel="css" href="style.css"> -->
+    <style>
+        :root {
+                --blue: #109cf1;
+                --dark-blue: #334d6e;
+                --light-blue: #cfebfc;
+                --middle-blue: #9fd7f9;
+                --black: #192a3e;
+                --table-black: #323c47;
+                --table-grey: #707683;
+                --grey: #90a0b7;
+                --grey-light: #c2cfe0;
+                --grey-extra-light: #eff1f4;
+                --white: #ffffff;
+            }
+        body{
+            background-color: var(--grey-extra-light);
+        }
+        h1, footer {
+            padding: 10px;
+            color:var(--dark-blue);
+            background-color: var(--middle-blue);
+            box-shadow: 6px 0 18px var(--dark-blue);  
+
+        }
+        nav{
+            background-color: var(--grey-light);
+        }
+         nav a{
+             display: inline-block;
+            color:var(--dark-blue);
+            background-color: var(--grey-light);
+         }
+
+         main{
+             background-color: var(--table-black)  ;
+             color:#a3a3a3;
+         }
+
+         main h2{
+            box-shadow: 6px 0 18px var(--middle-blue);  
+         }
+         li{ 
+            list-style-type:none;
+         }
+
+         .button {
+            width: 115px;
+            height: 25px;
+            background: #4e80af;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            line-height: 25px;
+        }
+        
+    </style>
+   </head>
+
+   <body>
+       <header>
+            <h1>Мне бы в небо</h1>
+            <nav>
+                <a href="" class="button">Navigation1</a>
+                <a href="" class="button">Navigation2</a>
+                <a href="" class="button">Navigation3</a>
+            </nav>
+       </header>
+       <main>
+           <article>
+                <h2>Способы</h2>
+                <ul>
+                    <li>&#9992 Самолет </li>
+                    <li>&#9992 Вертолет</li>
+                    <li>&#9992 Катапульта</li>
+                </ul>
+           </article>
+           <article>
+                <h2>Последствия</h2>
+                <ol>
+                    <li>&#9999 Далеко</li>
+                    <li>&#9999 Дорого</li>
+                    <li>&#9999 Навсегда</li>
+                </ol>
+            </article>
+       </main>
+       <footer>Footer</footer>  
+   </body>
 </html>
