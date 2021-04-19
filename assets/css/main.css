@@ -1,5 +1,20 @@
 @import '../fonts/fonts.css';
 
+@import './resets/_reset.css';
+@import './resets/_normalize.css';
+
+@import './variables.css';
+
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/footer/footer.css';
+
+
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+
+.content {
+    height: 300px;
 }
