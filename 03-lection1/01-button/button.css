@@ -1,10 +1,6 @@
 /* Стилизация кнопки */
-@import '../../assets/css/main.css';
-
-
 .button {
-    height: 48px;
-    width: 182px;
+
     border-radius: 8px;
 
     font-family: Roboto;
@@ -14,12 +10,14 @@
     line-height: 19px;
 
     text-align: center;
+    padding: 15px 60px;
 
     color: var(--white, #FFFFFF);
 }
 
-.button:disabled {
+.button[disabled] {
     opacity: 0.5;
+    pointer-events: none;
 }
 
 

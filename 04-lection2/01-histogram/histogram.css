@@ -1,0 +1,58 @@
+.column-chart {
+    border-radius: 12px;
+    background: var(--white);
+    width: 100%;
+    height: 100%;  
+  }
+
+.column-chart__container {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    position: relative;
+    width:  100%;
+    height: 100%;
+  }
+
+.column-chart__title {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 24px 0 24px;
+  }
+
+  .column-chart__link {
+    font-family: Inter-Regular;  
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .column-chart__value{
+    font-family: Inter-Regular;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black);
+    margin: 6px 24px 6px 24px ;
+  }
+
+  .column-chart__chart {
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    margin-top: auto;
+    margin: auto 24px 24px 24px;
+  }
+
+
+.column-chart__column {
+    width: 100%;
+    background-color: blue;
+    min-width: 1px;
+    flex-grow: 1;
+    margin: auto 0 0 1px;
+    cursor: pointer; 
+  }

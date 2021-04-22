@@ -1,14 +1,24 @@
 .header {
     padding: 96px 0 76px;
-    background: #E5E5E5;
+    background:var(--white-darker);
 }
 .header__title {
-    font-family: Inter;
+    font-family: Inter-Regular;
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color:var(--gray4, #212429);
+    color:var(--gray4);
     margin-left: 160px;
     
+}
+
+.header__logo {
+    display: inline-flex;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -1,11 +1,11 @@
 .footer {
     text-align: center;
-    background-color: #E5E5E5;
-    padding: 56px 0 56px 0 ;
+    background-color: var(--white-darker);
+    padding: 56px 0;
 }
 
 .footer__title {
-    font-family: Inter;
+    font-family: Inter-Regular;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -15,6 +15,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color:var(--gray3, #ACB5BD);
+    color:var(--gray3);
 
 }
