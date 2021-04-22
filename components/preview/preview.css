@@ -1,0 +1,23 @@
+.preview {
+    background: #F9FAFC;
+    padding: 68px 0 92px;
+}
+
+.preview__container {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.preview__card {
+height: 367px;
+flex-basis: 350px;
+margin: 15px;
+background:var(--white-darker);
+box-shadow: 0 2px 4px rgba(33,36,41,0.05);
+border-radius: 12px;
+border: 1px solid var(--gray3);
+
+
+}
