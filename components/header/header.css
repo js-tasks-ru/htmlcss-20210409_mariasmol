@@ -1,6 +1,6 @@
 .header {
-    padding: 96px 0 76px;
-    background:var(--white-darker);
+    padding: 25px 165px 25px 0px;
+    background:var(--white);
 }
 .header__title {
     font-family: Inter-Regular;
@@ -9,8 +9,6 @@
     font-size: 50px;
     line-height: 64px;
     color:var(--gray4);
-    margin-left: 160px;
-    
 }
 
 .header__logo {

@@ -1,17 +1,18 @@
 .column-chart {
+    display: flex;
     border-radius: 12px;
     background: var(--white);
-    width: 100%;
-    height: 100%;  
+    border: 1px solid var(--gray2);
+   /*  width: 100%;
+   height: 100%;  */
   }
 
 .column-chart__container {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
+    flex-grow: 1;
     position: relative;
-    width:  100%;
-    height: 100%;
   }
 
 .column-chart__title {
@@ -40,19 +41,22 @@
   }
 
   .column-chart__chart {
+  /*  width:100%;*/
     display: flex;
     flex-direction: row;
+    /*flex-grow: 1;*/
     justify-self: flex-end;
-    margin-top: auto;
-    margin: auto 24px 24px 24px;
+    justify-content: space-between;
+    align-items: flex-end;
+   /* margin-top: auto;*/
+    padding:  24px 24px 24px 24px ;
   }
 
 
 .column-chart__column {
-    width: 100%;
     background-color: blue;
     min-width: 1px;
     flex-grow: 1;
-    margin: auto 0 0 1px;
+    margin: 0 0 0 1px ;
     cursor: pointer; 
   }
