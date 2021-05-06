@@ -6,7 +6,7 @@
     justify-content: space-between;
 
   flex-grow: 1;
-    /* align-self: stretch;*/
+  /*   align-self: stretch;*/
     
     background: var(--white);
     border: 1px solid var(--gray2);  
@@ -26,10 +26,10 @@
     justify-content: space-between;
   
     margin-right: 20px;
-   /* width: 200px;*/
+    width: inherit;
     
     white-space: nowrap;
-    overflow: hidden;
+    overflow-x: hidden;
     text-overflow: ellipsis;
 
   }

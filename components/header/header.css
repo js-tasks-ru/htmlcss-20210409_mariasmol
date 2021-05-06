@@ -22,7 +22,8 @@
     align-items: center;
 }
 
-.icon__active {
+
+.icon-active {
     width: 30px;
     height: 24px;
     color:var(--gray4);
