@@ -2,6 +2,7 @@
     text-align: center;
     background-color:var(--white);
     padding: 56px 0;
+    border-top: 1px solid var(--gray3);
 }
 
 .footer__title {
