@@ -1,62 +1,72 @@
-.column-chart {
-    display: flex;
-    border-radius: 12px;
-    background: var(--white);
-    border: 1px solid var(--gray2);
-   /*  width: 100%;
-   height: 100%;  */
-  }
-
-.column-chart__container {
-    display: flex;
+.histogram {
+  /*width: 100%;*/
+   /* min-width: 200px;*/
+    display:flex;
     flex-direction: column;
-    justify-items: flex-start;
-    flex-grow: 1;
-    position: relative;
+    justify-content: space-between;
+
+  flex-grow: 1;
+  /*   align-self: stretch;*/
+    
+    background: var(--white);
+    border: 1px solid var(--gray2);  
+    border-radius: 12px;
+    padding: 16px 24px 24px 24px;
   }
 
-.column-chart__title {
+
+.histogram__title {
     font-family: Inter-Regular;
     font-size: 16px;
     line-height: 20px;
     color: var(--black);
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 16px 24px 0 24px;
+  
+    margin-right: 20px;
+    width: inherit;
+    
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+
   }
 
-  .column-chart__link {
+  .histogram__link {
     font-family: Inter-Regular;  
     color: var(--blue);
     text-decoration: none;
+
   }
 
-  .column-chart__value{
+  .histogram__value{
     font-family: Inter-Regular;
     font-size: 20px;
     line-height: 26px;
     color: var(--black);
-    margin: 6px 24px 6px 24px ;
+    margin-bottom:  24px ;
   }
 
-  .column-chart__chart {
-  /*  width:100%;*/
+  .histogram__chart { 
+   
     display: flex;
     flex-direction: row;
-    /*flex-grow: 1;*/
-    justify-self: flex-end;
-    justify-content: space-between;
+    height: 70px;
+   /* flex: 1 1 1fr;*/
     align-items: flex-end;
-   /* margin-top: auto;*/
-    padding:  24px 24px 24px 24px ;
+    
+    border: 0px solid lightcoral;
+
+     /* min-height: 100px;*/
   }
 
 
-.column-chart__column {
-    background-color: blue;
+.histogram__column {
+    background-color: var(--blue);
     min-width: 1px;
-    flex-grow: 1;
+    flex-basis: 100%;
     margin: 0 0 0 1px ;
     cursor: pointer; 
   }
