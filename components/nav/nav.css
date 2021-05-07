@@ -14,5 +14,5 @@ padding-right: 24px;
 }
 
 .nav__item_active {
-    color: var(--black);
+    color: var(--gray4);
 }
