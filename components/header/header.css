@@ -1,6 +1,7 @@
 .header {
     padding: 25px 165px 25px 0px;
     background:var(--white);
+    border-bottom: 1px solid var(--gray3);
 }
 .header__title {
     font-family: Inter-Regular;
@@ -11,12 +12,35 @@
     color:var(--gray4);
 }
 
+.header__container {
+    display: flex;
+    justify-content: flex-end;
+  /*  justify-items: end;
+    align-items: center;*/
+}
+.header__item {
+   /*   order: 5;
+    margin-left: auto;
+   display: inline-flex;*/
+}
 .header__logo {
+    order: 5;
+   /* justify-self: end;*/
     display: inline-flex;
 }
 
-.header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
+.icon-active {
+    width: 30px;
+    height: 24px;
+    color:var(--gray4);
+    margin: 0 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 24px;
+    color:var(--gray3);
+    margin: 0 5px;
 }
