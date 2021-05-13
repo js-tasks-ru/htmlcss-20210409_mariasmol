@@ -4,38 +4,58 @@
     <head>
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
-    <body class='page'>
+    <body >
+        <svg style="display: none;">
+            <defs>
+                <symbol id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8ZM6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C12.5523 0 13 0.447715 13 1V3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3V1C11 0.447715 11.4477 0 12 0Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C12.5523 20 13 20.4477 13 21V23C13 23.5523 12.5523 24 12 24C11.4477 24 11 23.5523 11 23V21C11 20.4477 11.4477 20 12 20Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.51286 3.51286C3.90339 3.12234 4.53655 3.12234 4.92708 3.51286L6.34708 4.93286C6.7376 5.32339 6.7376 5.95655 6.34708 6.34708C5.95655 6.7376 5.32339 6.7376 4.93286 6.34708L3.51286 4.92708C3.12234 4.53655 3.12234 3.90339 3.51286 3.51286Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.653 17.6529C18.0435 17.2624 18.6767 17.2624 19.0672 17.6529L20.4872 19.0729C20.8777 19.4634 20.8777 20.0966 20.4872 20.4871C20.0967 20.8776 19.4635 20.8776 19.073 20.4871L17.653 19.0671C17.2625 18.6766 17.2625 18.0434 17.653 17.6529Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 11.4477 0.447715 11 1 11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H1C0.447715 13 0 12.5523 0 12Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 11.4477 20.4477 11 21 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H21C20.4477 13 20 12.5523 20 12Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.34708 17.6529C6.7376 18.0434 6.7376 18.6766 6.34708 19.0671L4.92708 20.4871C4.53655 20.8776 3.90339 20.8776 3.51286 20.4871C3.12234 20.0966 3.12234 19.4634 3.51286 19.0729L4.93286 17.6529C5.32339 17.2624 5.95655 17.2624 6.34708 17.6529Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4872 3.51286C20.8777 3.90339 20.8777 4.53655 20.4872 4.92708L19.0672 6.34708C18.6767 6.7376 18.0435 6.7376 17.653 6.34708C17.2625 5.95655 17.2625 5.32339 17.653 4.93286L19.073 3.51286C19.4635 3.12234 20.0967 3.12234 20.4872 3.51286Z" fill="currentColor"/>
+                </symbol>
+                <symbol  id="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9999 10.79C18.8426 12.4922 18.2038 14.1144 17.1581 15.4668C16.1125 16.8192 14.7034 17.8458 13.0956 18.4265C11.4878 19.0073 9.74789 19.1181 8.0794 18.7461C6.41092 18.3741 4.8829 17.5345 3.67413 16.3258C2.46536 15.117 1.62584 13.589 1.25381 11.9205C0.881777 10.252 0.992617 8.51208 1.57336 6.9043C2.15411 5.29651 3.18073 3.88737 4.53311 2.84175C5.8855 1.79614 7.5077 1.15731 9.2099 1C8.21331 2.34827 7.73375 4.00945 7.85843 5.68141C7.98312 7.35338 8.70376 8.92506 9.8893 10.1106C11.0748 11.2961 12.6465 12.0168 14.3185 12.1415C15.9905 12.2662 17.6516 11.7866 18.9999 10.79V10.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </symbol>
+                <symbol id="help" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="currentColor"/>       
+                </symbol>
+            </defs>
+        </svg> 
         <header class="header">
             <div class="page__box header__container">
-                <a class="header__logo">
+                <div class="header__item">
                     <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="1" width="30" height="30" fill="#212429"/>   
+                        <rect y="1" width="30" height="30" fill="#212429"/>
                         <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>     
-                    </svg>     
-                </a>
-                <nav class="nav">
-                    <a href="#" class="nav__item nav__item_active">Components</a>
-                    <a href="#" class="nav__item">About</a>
-                    <a href="#" class="nav__item">Contact</a>
-                </nav>
-                <div > 
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 1V3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 21V23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4.22021 4.21997L5.64021 5.63997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.3599 18.36L19.7799 19.78" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 12H3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M21 12H23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4.22021 19.78L5.64021 18.36" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.3599 5.63997L19.7799 4.21997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                    </svg>                           
+               </div>
+               
+                    <nav class="nav">
+                        <a href="#" class="nav__item nav__item_active">Components</a>
+                        <a href="#" class="nav__item">About</a>
+                        <a href="#" class="nav__item">Contact</a>
+                    </nav> 
 
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.9999 10.79C18.8426 12.4922 18.2038 14.1144 17.1581 15.4668C16.1125 16.8192 14.7034 17.8458 13.0956 18.4265C11.4878 19.0073 9.74789 19.1181 8.0794 18.7461C6.41092 18.3741 4.8829 17.5345 3.67413 16.3258C2.46536 15.117 1.62584 13.589 1.25381 11.9205C0.881777 10.252 0.992617 8.51208 1.57336 6.9043C2.15411 5.29651 3.18073 3.88737 4.53311 2.84175C5.8855 1.79614 7.5077 1.15731 9.2099 1C8.21331 2.34827 7.73375 4.00945 7.85843 5.68141C7.98312 7.35338 8.70376 8.92506 9.8893 10.1106C11.0748 11.2961 12.6465 12.0168 14.3185 12.1415C15.9905 12.2662 17.6516 11.7866 18.9999 10.79V10.79Z" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>    
+                    <a class="header__logo">
+                        <svg class="icon-active">
+                               <use xlink:href="#sun"></use>
+                         <!-- <use xlink:href="assets/images/images.svg#sun"></use>-->
+                        </svg> 
+                        <svg class="icon">
+                            <use xlink:href="#moon"></use>
+                          <!--   <use xlink:href="./assets/images/images.svg#sun"></use>-->
+                        </svg>   
+                    </a>
+              
+
                 
             </div>
             <div class="page__box">
@@ -43,23 +63,163 @@
             </div>
         </header>
 
-         <main >
-             <div class="preview"> 
+         <main class='page'>
+             <div class="preview-grid">
+                 <div class="page__box preview-grid__container">
+                     <div class="card">
+                         <div class="card__body">
+                            <div class="histogram">
+                                <div class="histogram__title">
+                                    Total orders
+                                   <a href="" class="histogram__link">View All</a> 
+                                </div>
+                                <div class="histogram__value">
+                                    50142
+                                </div>
+                                <div class="histogram__chart">
+                                    <div class="histogram__column" style="height:10%;"></div>
+                                    <div class="histogram__column" style="height:60%;"></div>
+                                    <div class="histogram__column" style="height:10%;"></div>
+                                    <div class="histogram__column" style="height:20%;"></div>
+                                    <div class="histogram__column" style="height:30%;"></div>
+                                    <div class="histogram__column" style="height:40%;"></div>
+                                    <div class="histogram__column" style="height:40%;"></div>
+                                    <div class="histogram__column" style="height:60%;"></div>
+                                    <div class="histogram__column" style="height:10%;"></div>
+                                    <div class="histogram__column" style="height:20%;"></div> 
+                                    <div class="histogram__column" style="height:10%;"></div>
+                                    <div class="histogram__column" style="height:60%;"></div>
+                                    <div class="histogram__column" style="height:10%;"></div>
+                                    <div class="histogram__column" style="height:20%;"></div>
+                                    <div class="histogram__column" style="height:30%;"></div>
+                                    <div class="histogram__column" style="height:40%;"></div>
+                                    <div class="histogram__column" style="height:40%;"></div>
+                                    <div class="histogram__column" style="height:60%;"></div>
+                                    <div class="histogram__column" style="height:10%;"></div>
+                                    <div class="histogram__column" style="height:20%;"></div> 
+                                </div>
+                            </div>
+                         </div>
+                         <div class="card__label">Histogram</div>
+                         <div class="card__type">Element</div>
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
+                           <div class="avatar">
+                                <img src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="avatar">
+                           </div>
+                        </div>
+                        <div class="card__label">Avatar</div>
+                        <div class="card__type">Element</div>
+                   </div>
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="calendar">
+                                <div class="calendar__title">April 2021</div>
+                                <div class="calendar__wrapper">
+                                    <div class="calendar__inner">
+                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                        <span class="calendar__item calendar__item_day">Wen</span>
+                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                        <span class="calendar__item calendar__item_nondate">29</span>
+                                        <span class="calendar__item calendar__item_nondate">30</span>
+                                        <span class="calendar__item calendar__item_nondate">31</span>
+                                        <span class="calendar__item calendar__item_date">1</span>
+                                        <span class="calendar__item calendar__item_date">2</span>
+                                        <span class="calendar__item calendar__item_outerrange">3</span>
+                                        <span class="calendar__item calendar__item_inrange">4</span>
+                                        <span class="calendar__item calendar__item_inrange">5</span>
+                                        <span class="calendar__item calendar__item_inrange">6</span>
+                                        <span class="calendar__item calendar__item_inrange">7</span>
+                                        <span class="calendar__item calendar__item_inrange">8</span>
+                                        <span class="calendar__item calendar__item_inrange">9</span>
+                                        <span class="calendar__item calendar__item_outerrange">10</span>
+                                        <span class="calendar__item calendar__item_date">11</span>
+                                        <span class="calendar__item calendar__item_date">12</span>
+                                        <span class="calendar__item calendar__item_date">13</span>
+                                        <span class="calendar__item calendar__item_date">14</span>
+                                        <span class="calendar__item calendar__item_date">15</span>
+                                        <span class="calendar__item calendar__item_date">16</span>
+                                        <span class="calendar__item calendar__item_date">17</span>
+                                        <span class="calendar__item calendar__item_date">18</span>
+                                        <span class="calendar__item calendar__item_date">19</span>
+                                        <span class="calendar__item calendar__item_date">20</span>
+                                        <span class="calendar__item calendar__item_date">21</span>
+                                        <span class="calendar__item calendar__item_date">22</span>
+                                        <span class="calendar__item calendar__item_date">23</span>
+                                        <span class="calendar__item calendar__item_date">24</span>
+                                        <span class="calendar__item calendar__item_date">25</span>
+                                        <span class="calendar__item calendar__item_date">26</span>
+                                        <span class="calendar__item calendar__item_date">27</span>
+                                        <span class="calendar__item calendar__item_date">28</span>
+                                        <span class="calendar__item calendar__item_date">29</span>
+                                        <span class="calendar__item calendar__item_date">30</span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="card__label">Calendar dhsfhb fdhbfdhsdf shbsrbhnnfng dfbvgfdbdzbndzgn fz</div>
+                        <div class="card__type">Component</div>
+                   </div>
+                   <div class="card">
+                        <div class="card__body">
+                            <div class="card__element">
+                                <button class="button button_primary" >Primary</button>
+                            </div>
+                        </div>
+                        <div class="card__label">Button</div>
+                        <div class="card__type">Element</div>
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="card__element">
+                                <div class="tooltip">
+                                    <div class="tooltip__trigger">
+                                        <svg class="tooltip__trigger-sign">
+                                            <use xlink:href="#help"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="tooltip__menu"> 
+                                    HelperText
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__label">Button</div>
+                        <div class="card__type">Element</div>
+                    </div>
+                 </div>
+                 
+             </div>
+        <!--    <div class="preview"> 
                 <div class="page__box">
                     <div class="preview__container"> 
                     <div class="preview__card">
                         <div class="preview__card_component">
                             <div class="column-chart">
-                                <div class="column-chart__container">
+                              
                                     <div class="column-chart__title">
-                                        Total orders  
+                                        Total orders
                                         <a href="" class="column-chart__link">View All</a>
                                     </div>
                                     <div class="column-chart__value">
                                         50142
                                     </div>
                                     <div class="column-chart__chart">
-                                    <div class="column-chart__column" style="height:10px;"></div>
+                                        <div class="column-chart__column" style="height:10px;"></div>
                                         <div class="column-chart__column" style="height:60px;"></div>
                                         <div class="column-chart__column" style="height:10px;"></div>
                                         <div class="column-chart__column" style="height:20px;"></div>
@@ -70,20 +230,81 @@
                                         <div class="column-chart__column" style="height:10px;"></div>
                                         <div class="column-chart__column" style="height:20px;"></div> 
                                     </div>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="preview__card_label">Histogram</div>
                         <div class="preview__card_type">Element</div>
                     </div>
-                    <div class="preview__card"></div>
+                    <div class="preview__card">
+                        <div class="preview__card_component">
+                          <div class="calendar">
+                                <div class="calendar__title">April 2021</div>
+                               <div class="calendar__wrapper">
+                                    <div class="calendar__inner">
+                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                        <span class="calendar__item calendar__item_day">Wen</span>
+                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                        <span class="calendar__item calendar__item_nondate">29</span>
+                                        <span class="calendar__item calendar__item_nondate">30</span>
+                                        <span class="calendar__item calendar__item_nondate">31</span>
+                                        <span class="calendar__item calendar__item_date">1</span>
+                                        <span class="calendar__item calendar__item_date">2</span>
+                                        <span class="calendar__item calendar__item_outerrange">3</span>
+                                        <span class="calendar__item calendar__item_inrange">4</span>
+                                        <span class="calendar__item calendar__item_inrange">5</span>
+                                        <span class="calendar__item calendar__item_inrange">6</span>
+                                        <span class="calendar__item calendar__item_inrange">7</span>
+                                        <span class="calendar__item calendar__item_inrange">8</span>
+                                        <span class="calendar__item calendar__item_inrange">9</span>
+                                        <span class="calendar__item calendar__item_outerrange">10</span>
+                                        <span class="calendar__item calendar__item_date">11</span>
+                                        <span class="calendar__item calendar__item_date">12</span>
+                                        <span class="calendar__item calendar__item_date">13</span>
+                                        <span class="calendar__item calendar__item_date">14</span>
+                                        <span class="calendar__item calendar__item_date">15</span>
+                                        <span class="calendar__item calendar__item_date">16</span>
+                                        <span class="calendar__item calendar__item_date">17</span>
+                                        <span class="calendar__item calendar__item_date">18</span>
+                                        <span class="calendar__item calendar__item_date">19</span>
+                                        <span class="calendar__item calendar__item_date">20</span>
+                                        <span class="calendar__item calendar__item_date">21</span>
+                                        <span class="calendar__item calendar__item_date">22</span>
+                                        <span class="calendar__item calendar__item_date">23</span>
+                                        <span class="calendar__item calendar__item_date">24</span>
+                                        <span class="calendar__item calendar__item_date">25</span>
+                                        <span class="calendar__item calendar__item_date">26</span>
+                                        <span class="calendar__item calendar__item_date">27</span>
+                                        <span class="calendar__item calendar__item_date">28</span>
+                                        <span class="calendar__item calendar__item_date">29</span>
+                                        <span class="calendar__item calendar__item_date">30</span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>
+                                        <span class="calendar__item calendar__item_date"></span>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview__card_label">Calendar</div>
+                        <div class="preview__card_type">Container</div>
+                    </div>
                     <div class="preview__card"></div>
                     <div class="preview__card"></div>
                     <div class="preview__card"></div>
                     <div class="preview__card"></div>
 
                 </div>
-            </div>
+            </div>  --> 
          </main>
 
          <footer class="footer">
