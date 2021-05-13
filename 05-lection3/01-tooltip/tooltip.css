@@ -44,7 +44,6 @@
 .tooltip__trigger:hover ~.tooltip__menu {
     display: block;
     text-align: center;
-
     font-family: Inter-Regular;
     font-style: normal;
     font-weight: normal;

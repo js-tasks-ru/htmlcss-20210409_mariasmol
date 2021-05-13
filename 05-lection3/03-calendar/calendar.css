@@ -2,14 +2,11 @@
 .calendar {
     border: 1px solid var(--gray3);
     border-radius: 8px;
-    
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-
     flex-grow: 1;
     padding: 0.5em;
-    /* padding: 1rem 1rem;*/
 }
 
 .calendar__title {
@@ -20,9 +17,6 @@
     color: var(--blue);
     text-align: center;
     margin: 0.2em;
-
-    
-
     justify-content: start;
 }
 
@@ -51,7 +45,6 @@
     font-size: 16px;
     line-height: 20px;
     color: #334D6E;
-
     display: flex;
     align-items: center;
     justify-content: center;
