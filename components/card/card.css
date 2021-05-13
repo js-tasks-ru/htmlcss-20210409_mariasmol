@@ -4,12 +4,6 @@
     flex-basis:222px;
     justify-content: flex-end;
 
-   
-/* height: 367px;
-    flex-basis: 350px;
-    margin: 15px;*/
-
-
     background:var(--white);
     box-shadow: 0 2px 4px rgba(33,36,41,0.05);
     border-radius: 12px;
@@ -57,5 +51,4 @@
 
     margin-top: 6px;
     margin-bottom: 32px;
-   
 }

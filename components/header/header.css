@@ -15,17 +15,11 @@
 .header__container {
     display: flex;
     justify-content: flex-end;
-  /*  justify-items: end;
-    align-items: center;*/
 }
-.header__item {
-   /*   order: 5;
-    margin-left: auto;
-   display: inline-flex;*/
-}
+
+
 .header__logo {
     order: 5;
-   /* justify-self: end;*/
     display: inline-flex;
 }
 
@@ -44,3 +38,4 @@
     color:var(--gray3);
     margin: 0 5px;
 }
+
