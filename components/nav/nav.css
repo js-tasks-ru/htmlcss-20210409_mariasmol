@@ -1,5 +1,6 @@
 .nav {
-
+    order: 5;
+    margin-left: auto;
 }
 
 .nav__item {
