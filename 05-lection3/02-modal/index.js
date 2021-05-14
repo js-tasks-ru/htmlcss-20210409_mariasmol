@@ -8,7 +8,6 @@
     }
 
     modalOpen.addEventListener('click', () => {
-        console.log('buttonPressed');
         modal.style.display = 'block';
         document.body.overflow = 'hidden';
     });
@@ -18,4 +17,3 @@
         document.body.overflow = 'initial';
     });
 })();
-
