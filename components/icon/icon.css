@@ -1,0 +1,13 @@
+.icon {
+    width: 30px;
+    height: 24px;
+    color:var(--gray3);
+    margin: 0 5px;
+}
+
+.icon-active {
+    width: 30px;
+    height: 24px;
+    color:var(--gray4);
+    margin: 0 5px;
+}
