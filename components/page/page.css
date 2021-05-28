@@ -1,0 +1,18 @@
+.page {
+
+}
+
+.page__box {
+    max-width: 1440px;
+    margin: auto 165px;
+}
+
+@media screen and (max-width: 768px){
+	.page__box  {
+        margin: auto 25px;
+	}
+}
+
+
+
+
