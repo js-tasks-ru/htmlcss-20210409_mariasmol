@@ -1,0 +1,17 @@
+.nav {
+    margin-left: auto;
+}
+
+.nav__item {
+font-family: Inter-Regular;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--gray3);
+padding-right: 24px;
+}
+
+.nav__item_active {
+    color: var(--gray4);
+}
